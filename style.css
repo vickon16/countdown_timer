@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+
+body {
+	background:  url("new_year_image.jpg") center/ cover no-repeat;
+	min-height: 100vh;
+	font-family: "lato", sans-serif;
+
+}
+
+.container {
+	width: 100%;
+	height:  100vh;
+	border: 1px solid white;
+	color:  white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+h1 {
+	font-size: 2.5rem;
+  margin: 1rem 2rem;
+  font-weight: 400;
+}
+
+.countdown-container {
+	display: flex;
+	margin-bottom: 5rem;
+  text-align: center;
+}
+
+.big-text {
+	font-size: 5.5rem;
+	line-height: 1;
+  margin: 0 2.2rem;
+  font-weight: bold;
+}
+
+.countdown-container span {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
