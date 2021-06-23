@@ -4,11 +4,16 @@
 }
 
 
+:root {
+  font-size: 15px;
+}
+
+
 body {
 	background:  url("new_year_image.jpg") center/ cover no-repeat;
 	min-height: 100vh;
 	font-family: "lato", sans-serif;
-
+  width: 100%;
 }
 
 .container {
@@ -20,6 +25,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+  overflow: hidden;
 }
 
 h1 {
@@ -30,7 +36,8 @@ h1 {
 
 .countdown-container {
 	display: flex;
-	margin-bottom: 5rem;
+  width: 100%;
+	margin: 1.5rem 0 5rem;
   text-align: center;
 }
 
@@ -46,3 +53,84 @@ h1 {
   font-weight: 400;
 }
 
+ form {
+  margin: 1rem 2rem;
+  width: 100%;
+  max-width: 35rem;
+}
+
+.heading, .date-form {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+legend {width: 35%; font-size: 1.2rem;}
+
+input {
+  width: 65%;
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+
+}
+
+button {
+  padding: .4rem 1rem;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 2rem;
+  width: 10rem;
+  font-size: 1.2rem;
+  transition: 400ms;
+}
+
+button:hover {
+  background-color: #232323;
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    margin: 2rem 0rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .countdown-container {
+    justify-content: center;
+    margin: 1rem 0 3rem;
+  }
+
+  .big-text {
+    font-size: 4.5rem;
+  }
+
+
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  :root {
+    font-size: 8px;
+  }
+}
