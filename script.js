@@ -4,6 +4,10 @@ const dateInsert = document.getElementById("date-insert");
 
 let newYear = "16 july 2021";
 
+setTimeout(() => {
+  alert("Set your countdown to any date of your choice. \nInput your header and the required date. \nDone!!!. \n\nCreated by VicKon")
+}, 2000);
+
 
 function Submit() {
   try {
