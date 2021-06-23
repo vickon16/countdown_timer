@@ -62,6 +62,7 @@ h1 {
 .heading, .date-form {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 1rem 0;
 }
 
@@ -111,7 +112,24 @@ button:hover {
   }
 
   .big-text {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
+  }
+
+  .heading, .date-form {
+    flex-direction: column;
+  }
+
+  legend {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  form {
+    margin: 0;
+  }
+
+  button {
+    margin: 2rem auto;
   }
 
 
