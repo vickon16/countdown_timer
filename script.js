@@ -4,9 +4,11 @@ const dateInsert = document.getElementById("date-insert");
 
 let newYear = "16 july 2021";
 
-setTimeout(() => {
-  alert("Set your countdown to any date of your choice. \nInput your header and the required date. \nDone!!!. \n\nCreated by VicKon")
-}, 2000);
+const timer = setInterval(countDown, 1000);
+
+// setTimeout(() => {
+//   alert("Set your countdown to any date of your choice. \nInput your header and the required date. \nDone!!!. \n\nCreated by VicKon")
+// }, 2000);
 
 
 function Submit() {
@@ -51,6 +53,10 @@ function countDown(days, hours, mins, seconds) {
   mins = formatTime(mins);
   seconds = formatTime(seconds);
 
+  if (newYearDate - currentDate < 0) {
+    clearInterval(timer)
+  }
+
   display(days, hours, mins, seconds)
 
 }
@@ -66,7 +72,3 @@ function display(days, hours, mins, seconds) {
 function formatTime(time) {
   return (time < 10 && time > 0) ?  `0${time}` : time;
 }
-
-
-
-setInterval(countDown, 1000);
