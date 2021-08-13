@@ -37,7 +37,7 @@ h1 {
 .countdown-container {
 	display: flex;
   width: 100%;
-	margin: 1.5rem 0 5rem;
+	margin: 1.5rem 0 3.5rem;
   text-align: center;
 }
 
@@ -51,6 +51,18 @@ h1 {
 .countdown-container span {
   font-size: 1.3rem;
   font-weight: 400;
+}
+
+.elapsed {
+  margin: 0rem 2.2rem 1rem;
+  background-color: red;
+  padding: .5rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  display: none;
+}
+.elapsed.show {
+  display: block;
 }
 
  form {
@@ -115,7 +127,10 @@ button:hover {
   .big-text {
     font-size: 3.5rem;
   }
-
+  .elapsed {
+    text-align: center;
+    margin: .5rem auto 2rem;
+  }
   .heading, .date-form {
     flex-direction: column;
   }
